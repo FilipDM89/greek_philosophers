@@ -43,10 +43,15 @@ const philosophers = [
     }
 ];
 
+
+
 // Philosophers' loop
-for(let key in philosophers){
-    let philosopher = philosophers[key]
-    for (property in philosopher){
-    philosopher.name
-    }
+
+for(var i = 0; i < philosophers.length; i++){
+    $('<h1 class="name" />').html(philosophers[i]["name"]).appendTo('.allphilosophers');
+    $('<div class="img m-1" />').html(philosophers[i]["img"]).appendTo('.allphilosophers')
+    $('<div class="quote" />').html("<h5><em>" + "\"" + philosophers[i]["quote"] + "\"" + "</em></h5>").appendTo('.allphilosophers');
+    $('<div class="about mt-2 p-1" />').html("<h3> About </h3>" + philosophers[i]["about"]).appendTo('.allphilosophers');
+    $('<hr />').appendTo('.allphilosophers')
 }
+

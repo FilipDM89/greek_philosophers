@@ -1,3 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* .img:nth-child(even) {
+    float: left;
+}
+
+.img:nth-child(odd) {
+    float: right;
+} */
+
+.quote {
+    color: white;
+    background: black;
+    padding: 2%;
+    width: 60%;
+}
+
+
+img {
+    height: 350px;
+    width: 250px;
+}
+
+.about {
+    border: 2px solid black;
+}
+
 hr {
     border: 2px solid black;
+    overflow-x: visible;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+footer {
+    background-color: black;
+    color:white;
+    height: 150px;
+    width: 100%;
+    padding: 0;
 }
